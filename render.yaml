@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: aetrix-webhook
+    env: node
+    plan: starter
+    branch: main
+    buildCommand: npm install
+    startCommand: node index.js
+    rootDir: .
